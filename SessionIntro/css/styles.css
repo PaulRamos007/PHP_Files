@@ -1,0 +1,20 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top:50px;
+    clear:both;
+}
+nav{
+    margin:10px 0 50px;
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+.sensitive{
+    text-align: center;
+    color: #F00;
+}

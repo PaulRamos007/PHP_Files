@@ -1,0 +1,7 @@
+img {
+  height: 10%;
+  width: 10%;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
