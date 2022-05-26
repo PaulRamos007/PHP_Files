@@ -1,0 +1,16 @@
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+input[type="text"], textarea{
+    border: 1px solid dashed;
+    background-color: rgb(221, 217,213);
+    width: 700px;
+    padding: .5em;
+    font-size: 1em;
+}
+.ErrorRed{
+    color: red;
+    font-size: 18px;
+}
