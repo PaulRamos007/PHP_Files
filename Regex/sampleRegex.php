@@ -12,7 +12,7 @@ if (preg_match("^[a-zA-Z0-9]{4,16}$", $str)) {
 //Case sensitive regex to verify if a string is a valid domain name. This is very useful when validating web forms.
 
 $url = "http://komunitasweb.com/";
-if (preg_match('/^(http|https|ftp)://([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*)+):?(d+)?/?/i', $url)) {
+if (preg_match('/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*)+):?(d+)?\/?/i', $url)) {
     echo "Your url is ok.";
 } else {
     echo "Wrong url.";
@@ -22,8 +22,7 @@ if (preg_match('/^(http|https|ftp)://([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*
 
 function validate_url($url)
 {
-    return preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?
-(/.*)?$|i', $url);
+    return preg_match('|^http(s)?:\/\/[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(\/.*)?$|i', $url);
 }
 
 // Remove repeated words. I often found repeated words in a text, such as this this. This handy function will remove such duplicate words.
