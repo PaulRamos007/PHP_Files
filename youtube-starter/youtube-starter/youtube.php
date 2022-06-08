@@ -24,7 +24,7 @@
         </form>
         <?php
         if (($_SERVER['REQUEST_METHOD'] === 'GET') && !empty($_GET['search'])) {
-            $apiKey = "AIzaSyDG8DCjpolNOr0cj98-m2HV_-Gnk2RYP-s";
+            $apiKey = "";
             $search = $_GET['search'];
             $maxResults = 5;
             if (!empty($_GET['maxResults'])) {
