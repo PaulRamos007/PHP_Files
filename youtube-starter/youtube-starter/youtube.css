@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.video{
+    width: 45%;
+    padding: 1%;
+    border: 1px dashed #000;
+    float: left;
+}
+form{
+    padding: 1%;
+}
+label{
+    display: inline-block;
+    width:100px;
+}

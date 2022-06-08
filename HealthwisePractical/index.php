@@ -17,9 +17,8 @@ include 'includes/header.php';
         <div id="col1">
           <p>
             <?php
-
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
-              $sql = "SELECT * FROM articles WHERE id = " . $_GET['id'];
+
 
               $id = $_POST['id'];
 
@@ -32,10 +31,9 @@ include 'includes/header.php';
                 $result->execute();
                 $final = $result->get_result();
                 $articles = $final->fetch_assoc();
-
-                $articles['article_content'];
               }
-            }
+              echo $articles['article_content'];
+            };
             ?>
           </p>
         </div>

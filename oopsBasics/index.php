@@ -2,12 +2,7 @@
 
 //instintiate the class
 
-$lighthouse = new Book();
-
-$lighthouse->title = "The lighthouse";
-$lighthouse->author = "Paul Ramos";
-$lighthouse->price = 10;
-$lighthouse->available = 0;
+$lighthouse = new Book("The lighthouse", "Paul Ramos", 10, 0);
 
 // var_dump($lighthouse);
 
